@@ -1,0 +1,15 @@
+{
+	"recommendations": [
+		"steoates.autoimport",
+		"formulahendry.auto-rename-tag",
+		"ms-azuretools.vscode-docker",
+		"mikestead.dotenv",
+		"dsznajder.es7-react-js-snippets",
+		"dbaeumer.vscode-eslint",
+		"esbenp.prettier-vscode",
+		"ms-playwright.playwright",
+		"yoavbls.pretty-ts-errors",
+		"bradlc.vscode-tailwindcss",
+		"wayou.vscode-todo-highlight"
+	]
+}
