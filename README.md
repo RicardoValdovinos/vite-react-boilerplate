@@ -82,7 +82,9 @@ And running the setup script (initializes git repository and husky and installs 
 pnpm run setup
 ```
 
-or in a single command
+Congrats! You're ready to starting working on that new project! 
+
+If you'd rather run the commands above in one go, check out the command below:
 
 ```
 git clone git@github.com:RicardoValdovinos/vite-react-boilerplate.git &&\
@@ -91,6 +93,10 @@ rm -rf .git &&\
 pnpm install &&\
 pnpm run setup
 ```
+
+**Note**: This project comes with two git hooks added by [husky](https://typicode.github.io/husky/). A prepare-commit-msg hook to run the [Commitizen](https://github.com/commitizen/cz-cli#readme) cli for those nice commit messages and a commit-msg hook to run [Commitlint](https://commitlint.js.org/#/) on the message itself. Commitlint will ensure the commit message follows the [Conventional Commits specification](https://www.conventionalcommits.org/en/v1.0.0/) (it will if you used commitizen).
+
+If you wish to remove any hooks, simply delete the corresponding file in the .husky directory.
 
 ## Important Note
 
