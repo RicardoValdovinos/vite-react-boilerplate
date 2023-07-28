@@ -1,7 +1,8 @@
 {
 	"name": "vite-react-boilerplate",
-	"private": true,
-	"version": "0.1.0",
+	"author": "Ricardo Valdovinos <ricardovaldovinos1996@gmail.com>"
+	"description": "A production ready, batteries included starter template for Vite + React projects"
+	"version": "1.0.0",
 	"scripts": {
 		"setup": "git init && husky install && npx playwright install",
 		"format": "prettier src/**/*.{ts,tsx} --write",
