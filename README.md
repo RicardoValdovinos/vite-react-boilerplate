@@ -82,7 +82,7 @@ And running the setup script (initializes git repository and husky and installs 
 pnpm run setup
 ```
 
-Congrats! You're ready to starting working on that new project! 
+Congrats! You're ready to starting working on that new project!
 
 If you'd rather run the commands above in one go, check out the command below:
 
@@ -217,6 +217,8 @@ When running the application in development mode you can find the TanStack Query
 **TanStack Router Devtools**, however, utilizes its respective utility component in this project. The initial setup has been taken care of but if you wish to modify or remove the component, have a look in `src/App.tsx`.
 
 The TanStack Router Devtools icon can be found in the bottom right corner of the page denoted by the vertically stacked "TANSTACK ROUTER" logo.
+
+The devtools above are commented out to start.
 
 **TanStack Table Devtools** Documentation is, at the time of writing this, non-existent. Having said that, usage is similar to the other TanStack devtools. A utility component restricting the devtools to development builds has been provided. The difference in comparison to the other TanStack devtools is the lack of floating mode. Instead, the Devtools are rendered as a component within the actual TanStack Table you define. An additional caveat being that the DevTools component (built-in and provided utility alike) require a table prop from the `useReactTable()` hook. In other words, if you have multiple tables each table must have its own Devtools component. Check the simplified code below.
 
