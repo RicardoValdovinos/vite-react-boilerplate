@@ -37,6 +37,7 @@ Built with type safety, scalability, and developer experience in mind. A batteri
 - [Vitest](https://vitest.dev) - A blazing fast unit test framework powered by Vite
 - [Playwright](https://playwright.dev) - Enables reliable end-to-end testing for modern web apps
 - [Nivo](https://nivo.rocks) - A rich set of data vizualization components, built on top of D3 and React
+- [Faker](https://fakerjs.dev/) - Generate massive amounts of fake (but realistic) data for testing and development
 - [Husky](https://github.com/typicode/husky#readme) + [Commitizen](https://github.com/commitizen/cz-cli#readme) + [Commitlint](https://github.com/conventional-changelog/commitlint#readme) - Git hooks and commit linting to ensure use of descriptive and practical commit messages
 - [ts-reset](https://github.com/total-typescript/ts-reset#readme) - Improvements for TypeScripts built-in typings for use in applications
 - [Docker](https://www.docker.com) - Containerization tool for deploying your vite-react-boilerplate app
@@ -98,13 +99,20 @@ pnpm run setup
 
 If you wish to remove any hooks, simply delete the corresponding file in the .husky directory.
 
-## Important Note
+## Important Notes
 
-This boilerplate project does not currently include a demo. At most, a few utilities (types, devtools, initial home page routes) are included.
+1. This boilerplate project does not currently include a demo. At most, a few utilities (types, devtools, initial home page routes) are included.
+   
+2. Due to empty directories not being included in git commits, placeholder README files have been added to these empty directories. These README files contain simple descriptions about how the different directories in the accompanying folder structure may be used. As an example check out the [recommended component organizational structure](src/components/README.md).
+   
+3. [Faker](https://fakerjs.dev/) is included to encourage more isolated testing and allow for rapid development of demos and MVPs. However, please make note that, [due to a bug](https://github.com/faker-js/faker/issues/1791), importing Faker from the main package (without a locale) will result in the entire Faker lib being imported causing bundle sizes to increase up to 2+ MB. Instead prefer [localized imports](https://fakerjs.dev/guide/localization.html#individual-localized-packages) as shown below.
+	
+	```
+	// import { faker } from '@faker-js/faker'; // prefer localization when possible
+	import { faker } from '@faker-js/faker/locale/en';
+	```
 
-Due to empty directories not being included in git commits, placeholder README files have been added to these empty directories. These README files contain simple descriptions about how the different directories in the accompanying folder structure may be used.
-
-As an example check out the [recommended component organizational structure](src/components/README.md).
+	The imported lib will instead be around 600 KB. Nonetheless, Faker should **NOT** be used in production and instead be limited to testing and demos.
 
 ## Testing
 
@@ -151,6 +159,8 @@ After:
 	"test:unit:coverage": "vitest run --coverage src/"
 }
 ```
+
+**Note**: Faker is included to provide mock data. See the [Important Notes](#important-notes) section for crucial details regarding this package.
 
 ### End-to-End (E2E) Testing
 
@@ -324,3 +334,4 @@ A simplified list can be found in the [Overview](#overview) section.
 ### Other
 
 - [ts-reset](https://github.com/total-typescript/ts-reset#readme)
+- [Faker](https://fakerjs.dev/)
