@@ -67,10 +67,10 @@
 			{ "allowConstantExport": true }
 		],
 		"unicorn/custom-error-definition": "error",
-		"unicorn/empty-brace-spaces": 1,
+		"unicorn/empty-brace-spaces": "error",
 		"unicorn/no-array-for-each": "off",
 		"unicorn/no-array-reduce": "off",
-		"unicorn/no-console-spaces": 1,
+		"unicorn/no-console-spaces": "error",
 		"unicorn/no-null": "off",
 		"unicorn/filename-case": [
 			"error",
