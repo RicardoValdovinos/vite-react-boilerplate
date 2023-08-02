@@ -19,7 +19,7 @@ Everything you need to kick off your next Vite + React web app!
 
 Built with type safety, scalability, and developer experience in mind. A batteries included Vite + React template.
 
-- [pnpm](https://pnpm.io) - A strict and efficient alternative to npm with up to 2x faster performance
+- [pnpm](https://pnpm.io) - A strict and efficient alternative to npm with up to 3x faster performance
 - [TypeScript](https://www.typescriptlang.org) - A typed superset of JavaScript designed with large scale applications in mind
 - [ESLint](https://eslint.org) - Static code analysis to help find problems within a codebase
 - [Prettier](https://prettier.io) - An opinionated code formatter
@@ -102,14 +102,14 @@ If you wish to remove any hooks, simply delete the corresponding file in the .hu
 ## Important Notes
 
 1. This boilerplate project does not currently include a demo. At most, a few utilities (types, devtools, initial home page routes) are included.
-   
+
 2. Due to empty directories not being included in git commits, placeholder README files have been added to these empty directories. These README files contain simple descriptions about how the different directories in the accompanying folder structure may be used. As an example check out the [recommended component organizational structure](src/components/README.md).
-   
+
 3. [Faker](https://fakerjs.dev/) is included to encourage more isolated testing and allow for rapid development of demos and MVPs. However, please make note that, [due to a bug](https://github.com/faker-js/faker/issues/1791), importing Faker from the main package (without a locale) will result in the entire Faker lib being imported causing bundle sizes to increase up to 2+ MB. Instead prefer [localized imports](https://fakerjs.dev/guide/localization.html#individual-localized-packages) as shown below.
-	
+
 	```
-	// import { faker } from '@faker-js/faker'; // prefer localization when possible
-	import { faker } from '@faker-js/faker/locale/en';
+	// import { faker } from '@faker-js/faker';
+	import { faker } from '@faker-js/faker/locale/en'; // prefer localization when possible
 	```
 
 	The imported lib will instead be around 600 KB. Nonetheless, Faker should **NOT** be used in production and instead be limited to testing and demos.
