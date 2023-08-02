@@ -200,12 +200,16 @@ A Dockerfile with an [NGINX](https://www.nginx.com) base image is also provided 
 
 Then have your web server pass requests to your web app at http://localhost:<port_number>
 
-#### Note:
+##### Note:
 
 - **<container_name>** should be replaced with a name for the built container. This can be the name of the application itself or something else.
   - Example: `docker build . -t todo-app`
 - **<port_number>** should be replaced with whatever port number the web application will be running on.
   - Example: `docker run todo-app -p 8080:80`
+ 
+### Continuous Integration
+
+Due to the vast array of tools, opinions, requirements and preferences a CI template is not included in this project.
 
 ## Devtools
 
