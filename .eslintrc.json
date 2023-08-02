@@ -31,8 +31,6 @@
 	},
 	"plugins": ["@typescript-eslint", "react-refresh", "unicorn"],
 	"rules": {
-		"constructor-super": "error",
-		"for-direction": "error",
 		"no-await-in-loop": "error",
 		"no-constant-binary-expression": "error",
 		"no-duplicate-imports": "error",
@@ -43,8 +41,8 @@
 		"no-unmodified-loop-condition": "error",
 		"no-unreachable-loop": "error",
 		"no-unused-private-class-members": "error",
-		"require-atomic-updates": "error",
 		"no-use-before-define": "error",
+		"require-atomic-updates": "error",
 		"camelcase": "error",
 		"@typescript-eslint/adjacent-overload-signatures": "error",
 		"@typescript-eslint/array-type": ["error", { "default": "generic" }],
