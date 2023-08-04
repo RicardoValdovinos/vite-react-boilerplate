@@ -101,11 +101,19 @@ If you wish to remove any hooks, simply delete the corresponding file in the .hu
 
 ## Important Notes
 
-1. This boilerplate project does not currently include a demo. At most, a few utilities (types, devtools, initial home page routes) are included.
+1. This project should be used as a _starting point_ for either learning or development.
 
-2. Due to empty directories not being included in git commits, placeholder README files have been added to these empty directories. These README files contain simple descriptions about how the different directories in the accompanying folder structure may be used. As an example check out the [recommended component organizational structure](src/components/README.md) as well as the [recommended folder structure](src/features/README.md).
+   - **Beginners** - If you are unfamiliar with the included dependencies, tools, or concepts, you should use this as a jumping off point for further study. Understand what you may or may not need for your given problem domain and how this template can help you achieve that.
+   - **Advanced Users** - This template was built to be flexible. All dependencies, with the exception of Vite and React of course, are easily removeable or replaceable.
 
-3. [Faker](https://fakerjs.dev/) is included to encourage more isolated testing and allow for rapid development of demos and MVPs. However, please make note that, [due to a bug](https://github.com/faker-js/faker/issues/1791), importing Faker from the main package (without a locale) will result in the entire Faker lib being imported causing bundle sizes to increase up to 2+ MB. Instead prefer [localized imports](https://fakerjs.dev/guide/localization.html#individual-localized-packages) as shown below.
+   \
+   Think of this template as an alternative form of starting a project. When working with app starters like create-react-app and the like, you start with the bare necessities and work your way up to your minimum viable product. Installing dependencies and configuring as you go. This boilerplate provides the opposite experience giving you everything you might need but still being flexible enough to allow you to remove dependencies and tools. In both cases, you will reach a point where you will have to modify the starter to suit your given problem domain and requirements.
+
+2. This boilerplate project does not currently include a demo. At most, a few utilities (types, devtools, initial home page routes) are included. There is no glue to get in your way when trying to modify the template.
+
+3. Due to empty directories not being included in git commits, placeholder README files have been added to these empty directories. These README files contain simple descriptions about how the different directories in the accompanying folder structure may be used. As an example check out the [recommended component organizational structure](src/components/README.md) as well as the [recommended folder structure](src/features/README.md).
+
+4. [Faker](https://fakerjs.dev/) is included to encourage more isolated testing and allow for rapid development of demos and MVPs. However, please make note that, [due to a bug](https://github.com/faker-js/faker/issues/1791), importing Faker from the main package (without a locale) will result in the entire Faker lib being imported causing bundle sizes to increase up to 2+ MB. Instead prefer [localized imports](https://fakerjs.dev/guide/localization.html#individual-localized-packages) as shown below.
 
    ```
    // import { faker } from '@faker-js/faker';
@@ -160,7 +168,7 @@ After:
 }
 ```
 
-**Note**: Faker is included to provide mock data. See the [Important Notes](#important-notes) section for crucial details regarding this package.
+**Note**: Faker is included to provide mock data. See the [Important Notes](#important-notes) section for crucial details regarding this package. Specifically, point 4.
 
 ### End-to-End (E2E) Testing
 
