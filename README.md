@@ -99,7 +99,7 @@ pnpm run setup
 
 If you wish to remove any hooks, simply delete the corresponding file in the .husky directory.
 
-## Important Notes
+## Important Note
 
 1. This project should be used as a _starting point_ for either learning or development.
 
