@@ -104,6 +104,7 @@ If you wish to remove any hooks, simply delete the corresponding file in the .hu
 1. This project should be used as a _starting point_ for either learning or development.
 
    - **Beginners** - If you are unfamiliar with the included dependencies, tools, or concepts, you should use this as a jumping off point for further study. Understand what you may or may not need for your given problem domain and how this template can help you achieve that.
+
    - **Advanced Users** - This template was built to be flexible. All dependencies, with the exception of Vite and React of course, are easily removeable or replaceable.
 
 2. This boilerplate project does not currently include a demo. At most, a few utilities (types, devtools, initial home page routes) are included. There is no glue to get in your way when trying to modify the template.
