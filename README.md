@@ -107,12 +107,12 @@ If you wish to remove any hooks, simply delete the corresponding file in the .hu
 
 3. [Faker](https://fakerjs.dev/) is included to encourage more isolated testing and allow for rapid development of demos and MVPs. However, please make note that, [due to a bug](https://github.com/faker-js/faker/issues/1791), importing Faker from the main package (without a locale) will result in the entire Faker lib being imported causing bundle sizes to increase up to 2+ MB. Instead prefer [localized imports](https://fakerjs.dev/guide/localization.html#individual-localized-packages) as shown below.
 
-	```
-	// import { faker } from '@faker-js/faker';
-	import { faker } from '@faker-js/faker/locale/en'; // prefer localization when possible
-	```
+   ```
+   // import { faker } from '@faker-js/faker';
+   import { faker } from '@faker-js/faker/locale/en'; // prefer localization when possible
+   ```
 
-	The imported lib will instead be around 600 KB. Nonetheless, Faker should **NOT** be used in production and instead be limited to testing and demos.
+   The imported lib will instead be around 600 KB. Nonetheless, Faker should **NOT** be used in production and instead be limited to testing and demos.
 
 ## Testing
 
@@ -196,17 +196,10 @@ A Dockerfile with an [NGINX](https://www.nginx.com) base image is also provided 
 
 1. `pnpm run build`
 2. `docker build . -t <container_name>`
+   - Example: `docker build . -t todo-app`
 3. `docker run  -p <port_number>:80 <container_name>`
+   - Example: `docker run todo-app -p 8080:80`
 
-Then have your web server pass requests to your web app at http://localhost:<port_number>
-
-##### Note:
-
-- **<container_name>** should be replaced with a name for the built container. This can be the name of the application itself or something else.
-  - Example: `docker build . -t todo-app`
-- **<port_number>** should be replaced with whatever port number the web application will be running on.
-  - Example: `docker run todo-app -p 8080:80`
- 
 ### Continuous Integration
 
 Due to the vast array of tools, opinions, requirements and preferences a CI template is not included in this project.
