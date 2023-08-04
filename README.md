@@ -106,9 +106,6 @@ If you wish to remove any hooks, simply delete the corresponding file in the .hu
    - **Beginners** - If you are unfamiliar with the included dependencies, tools, or concepts, you should use this as a jumping off point for further study. Understand what you may or may not need for your given problem domain and how this template can help you achieve that.
    - **Advanced Users** - This template was built to be flexible. All dependencies, with the exception of Vite and React of course, are easily removeable or replaceable.
 
-   \
-   Think of this template as an alternative form of starting a project. When working with app starters like create-react-app and the like, you start with the bare necessities and work your way up to your minimum viable product. Installing dependencies and configuring as you go. This boilerplate provides the opposite experience giving you everything you might need but still being flexible enough to allow you to remove dependencies and tools. In both cases, you will reach a point where you will have to modify the starter to suit your given problem domain and requirements.
-
 2. This boilerplate project does not currently include a demo. At most, a few utilities (types, devtools, initial home page routes) are included. There is no glue to get in your way when trying to modify the template.
 
 3. Due to empty directories not being included in git commits, placeholder README files have been added to these empty directories. These README files contain simple descriptions about how the different directories in the accompanying folder structure may be used. As an example check out the [recommended component organizational structure](src/components/README.md) as well as the [recommended folder structure](src/features/README.md).
