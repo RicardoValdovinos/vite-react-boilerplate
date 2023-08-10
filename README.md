@@ -38,6 +38,7 @@ Built with type safety, scalability, and developer experience in mind. A batteri
 - [Playwright](https://playwright.dev) - Enables reliable end-to-end testing for modern web apps
 - [Nivo](https://nivo.rocks) - A rich set of data visualization components, built on top of D3 and React
 - [Faker](https://fakerjs.dev/) - Generate massive amounts of fake (but realistic) data for testing and development
+- [Dayjs](https://day.js.org/en/) - A minimalist JavaScript library that parses, validates, manipulates, and displays dates and times for modern browsers
 - [Husky](https://github.com/typicode/husky#readme) + [Commitizen](https://github.com/commitizen/cz-cli#readme) + [Commitlint](https://github.com/conventional-changelog/commitlint#readme) - Git hooks and commit linting to ensure use of descriptive and practical commit messages
 - [ts-reset](https://github.com/total-typescript/ts-reset#readme) - Improvements for TypeScripts built-in typings for use in applications
 - [Docker](https://www.docker.com) - Containerization tool for deploying your vite-react-boilerplate app
@@ -338,3 +339,4 @@ A simplified list can be found in the [Overview](#overview) section.
 
 - [ts-reset](https://github.com/total-typescript/ts-reset#readme)
 - [Faker](https://fakerjs.dev/)
+- [Dayjs](https://day.js.org/en/)
