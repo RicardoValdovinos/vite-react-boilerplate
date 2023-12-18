@@ -161,7 +161,7 @@ After:
 }
 ```
 
-**Note**: Faker is included to provide mock data. See the [Important Notes](#important-notes) section for crucial details regarding this package. Specifically, point 4.
+**Note**: Faker is included to provide mock data. See the [Important Note](#important-note) section for crucial details regarding this package. Specifically, point 3.
 
 ### End-to-End (E2E) Testing
 
