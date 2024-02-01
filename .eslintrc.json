@@ -21,7 +21,8 @@
 		"tailwind.config.js",
 		"commitlint.config.cjs",
 		"playwright.config.ts",
-		"vitest.setup.ts"
+		"vitest.setup.ts",
+		"routeTree.gen.ts"
 	],
 	"parser": "@typescript-eslint/parser",
 	"parserOptions": {
