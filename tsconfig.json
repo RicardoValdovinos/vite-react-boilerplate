@@ -23,7 +23,15 @@
 		"noImplicitOverride": true,
 		"noImplicitReturns": true,
 		"noPropertyAccessFromIndexSignature": true,
-		"noUncheckedIndexedAccess": true
+		"noUncheckedIndexedAccess": true,
+
+		/* ShadCn */
+		"baseUrl": ".",
+		"paths": {
+			"@/*": [
+				"./src/*"
+			]
+		}
 	},
 	"include": ["src", "e2e"],
 	"references": [{ "path": "./tsconfig.node.json" }]

@@ -1,6 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Home } from "../pages/Home";
+import { HomePage } from "../pages/Home.tsx";
+import MailPage from "@/pages/Mail.tsx";
 
 export const Route = createFileRoute("/")({
-	component: Home,
+	component: HomePage,
+});
+
+export const MailRoute = createFileRoute("/")({
+	component: MailPage,
 });
