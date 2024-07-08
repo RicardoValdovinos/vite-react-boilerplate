@@ -5,6 +5,8 @@ import App from "./App.tsx";
 import { routeTree } from "./routeTree.gen.ts";
 import "./styles/tailwind.css";
 
+import "./i18n.ts";
+
 const router = createRouter({ routeTree });
 
 declare module "@tanstack/react-router" {
