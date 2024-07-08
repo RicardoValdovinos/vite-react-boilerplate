@@ -329,6 +329,11 @@ A simplified list can be found in the [Overview](#overview) section.
 - [Commitizen](https://github.com/commitizen/cz-cli#readme)
 - [Commitlint](https://github.com/conventional-changelog/commitlint#readme)
 
+### Internationalization
+
+- [i18n](https://github.com/i18next/i18next)
+- [react-i18next](https://github.com/i18next/react-i18next)
+
 ### Other
 
 - [ts-reset](https://github.com/total-typescript/ts-reset#readme)
