@@ -1,8 +1,3 @@
 {
-    "title": "bem vindo!",
-    "description": {
-      "part1": "This is just a basic example of how to use i18next with typescript",
-      "part2": "😉"
-    },
-    "inter": "interpolated {{val}}"
-  }
+    "title": "bem vindo!"
+}
