@@ -17,7 +17,7 @@
 	"version": "1.0.0",
 	"type": "module",
 	"scripts": {
-		"setup": "git init && husky install && npx playwright install",
+		"setup": "git init && npx husky init && npx playwright install",
 		"format": "prettier src/**/*.{ts,tsx} --write",
 		"lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
 		"lint:fix": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --fix",
@@ -33,7 +33,8 @@
 		"build": "tsc && vite build",
 		"preview": "vite preview",
 		"commitlint": "commitlint --edit",
-		"commitizen": "exec < /dev/tty && git cz --hook || true"
+		"commitizen": "exec < /dev/tty && git cz --hook || true",
+		"prepare": "husky"
 	},
 	"dependencies": {
 		"@hookform/resolvers": "^3.9.0",
