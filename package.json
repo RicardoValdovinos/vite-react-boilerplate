@@ -19,7 +19,7 @@
 	"scripts": {
 		"setup": "git init && npx husky init && npx playwright install",
 		"format": "prettier src/**/*.{ts,tsx} --write",
-		"lint": "eslint --max-warnings 0 --debug",
+		"lint": "eslint --max-warnings 0",
 		"lint:fix": "eslint --max-warnings 0 --fix",
 		"dev": "vite",
 		"storybook": "storybook dev -p 6006",
