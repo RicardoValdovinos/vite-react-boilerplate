@@ -106,7 +106,7 @@ const reactConfig = {
       { extensions: ['.js', '.jsx', '.ts', '.tsx'] }
     ],
     "react/jsx-no-target-blank": "off",
-    "react/jsx-max-props-per-line": "error",
+    "react/jsx-max-props-per-line": "off",
     "react/jsx-sort-props": [
       "error",
       {
