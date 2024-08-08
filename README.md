@@ -200,7 +200,7 @@ A Dockerfile with an [NGINX](https://www.nginx.com) base image is also provided 
 2. `docker build . -t <container_name>`
    - Example: `docker build . -t todo-app`
 3. `docker run  -p <port_number>:80 <container_name>`
-   - Example: `docker run todo-app -p 8080:80`
+   - Example: `docker run -p 8080:80 todo-app`
 
 ### Continuous Integration
 
