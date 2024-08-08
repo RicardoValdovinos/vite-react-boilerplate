@@ -6,7 +6,7 @@ import Backend, { type HttpBackendOptions } from "i18next-http-backend";
 const i18nOptions: InitOptions<HttpBackendOptions> = {
 	ns: ["home"],
 	fallbackLng: "en",
-	debug: true,
+	debug: !import.meta.env.PROD,
 	interpolation: {
 		escapeValue: false, // not needed for react as it escapes by default
 	},
