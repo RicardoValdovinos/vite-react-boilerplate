@@ -12,7 +12,7 @@ const i18nOptions: InitOptions<HttpBackendOptions> = {
 	},
 };
 
-await i18n
+void i18n
 	.use(initReactI18next)
 	.use(LanguageDetector)
 	.use(Backend)
