@@ -4,6 +4,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
 import { routeTree } from "./routeTree.gen.ts";
 import "./styles/tailwind.css";
+import './common/i18n'
 
 const router = createRouter({ routeTree });
 
@@ -19,7 +20,9 @@ if (!rootElement.innerHTML) {
 	const root = ReactDOM.createRoot(rootElement);
 	root.render(
 		<React.StrictMode>
-			<App router={router} />
+			<React.Suspense fallback="loading">
+				<App router={router} />
+			</React.Suspense>
 		</React.StrictMode>
 	);
 }
