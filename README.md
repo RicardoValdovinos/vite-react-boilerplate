@@ -332,6 +332,7 @@ A simplified list can be found in the [Overview](#overview) section.
 
 ### Other
 
+- [i18next](https://www.i18next.com/)
 - [react-i18next](https://react.i18next.com/)
 - [ts-reset](https://github.com/total-typescript/ts-reset#readme)
 - [Faker](https://fakerjs.dev/)
