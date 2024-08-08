@@ -78,6 +78,14 @@ const typescriptConfig = {
     "@typescript-eslint/prefer-readonly": "error",
     "no-return-await": "off",
     "@typescript-eslint/return-await": "error",
+    "@typescript-eslint/no-misused-promises": [
+    "error",
+    {
+      "checksVoidReturn": {
+        "attributes": false
+      }
+    }
+  ]
   },
   settings: {
     'import/resolver': {
