@@ -37,6 +37,7 @@ Built with type safety, scalability, and developer experience in mind. A batteri
 - [Vitest](https://vitest.dev) - A blazing fast unit test framework powered by Vite
 - [Playwright](https://playwright.dev) - Enables reliable end-to-end testing for modern web apps
 - [Nivo](https://nivo.rocks) - A rich set of data visualization components, built on top of D3 and React
+- [react-i18next](https://react.i18next.com/) - A powerful internationalization framework for React/React Native based on i18next
 - [Faker](https://fakerjs.dev/) - Generate massive amounts of fake (but realistic) data for testing and development
 - [Dayjs](https://day.js.org/en/) - A minimalist JavaScript library that parses, validates, manipulates, and displays dates and times for modern browsers
 - [Husky](https://github.com/typicode/husky#readme) + [Commitizen](https://github.com/commitizen/cz-cli#readme) + [Commitlint](https://github.com/conventional-changelog/commitlint#readme) - Git hooks and commit linting to ensure use of descriptive and practical commit messages
@@ -331,6 +332,7 @@ A simplified list can be found in the [Overview](#overview) section.
 
 ### Other
 
+- [react-i18next](https://react.i18next.com/)
 - [ts-reset](https://github.com/total-typescript/ts-reset#readme)
 - [Faker](https://fakerjs.dev/)
 - [Dayjs](https://day.js.org/en/)
