@@ -1,6 +1,7 @@
 import React from "react";
+import { isProduction } from "../../../common/utils";
 
-export const ReactHookFormDevelopmentTools = import.meta.env.PROD
+export const ReactHookFormDevelopmentTools = isProduction
 	? (): null => null
 	: React.lazy(() =>
 			import("@hookform/devtools").then((result) => ({

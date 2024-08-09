@@ -4,6 +4,7 @@ import Backend, { type HttpBackendOptions } from "i18next-http-backend";
 import { initReactI18next } from "react-i18next";
 import translationEN from "../assets/locales/en/translations.json";
 import translationES from "../assets/locales/es/translations.json";
+import { isProduction } from "./utils";
 
 export const defaultNS = "translations";
 export const resources = {
@@ -14,13 +15,15 @@ export const resources = {
 const i18nOptions: InitOptions<HttpBackendOptions> = {
 	defaultNS,
 	ns: [defaultNS],
-	debug: !import.meta.env.PROD,
+	debug: !isProduction,
 	fallbackLng: "en",
 	interpolation: {
 		escapeValue: false, // not needed for react as it escapes by default
 	},
 	backend: {
-		loadPath: "src/assets/locales/{{lng}}/translations.json",
+		loadPath: isProduction
+			? "locales/{{lng}}/translations.json"
+			: "src/assets/locales/{{lng}}/translations.json",
 	},
 };
 
