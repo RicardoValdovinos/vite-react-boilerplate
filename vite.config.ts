@@ -1,4 +1,4 @@
-import { TanStackRouterVite } from "@tanstack/router-vite-plugin";
+import { TanStackRouterVite } from "@tanstack/router-plugin/vite"
 import react from "@vitejs/plugin-react-swc";
 import path from "node:path";
 import { normalizePath } from "vite";
