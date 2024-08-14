@@ -76,7 +76,7 @@
     "@storybook/test": "^8.2.8",
     "@tanstack/react-query-devtools": "^5.51.23",
     "@tanstack/react-table-devtools": "^8.20.1",
-    "@tanstack/router-devtools": "1.47.1",
+    "@tanstack/router-devtools": "^1.47.1",
     "@tanstack/router-plugin": "^1.47.0",
     "@testing-library/jest-dom": "^6.4.8",
     "@testing-library/react": "^16.0.0",
