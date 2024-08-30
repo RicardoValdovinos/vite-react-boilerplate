@@ -17,7 +17,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "setup": "git init && npx husky init && npx playwright install && rm .husky/pre-commit",
+    "setup": "git init && npx husky init && npx playwright install && shx rm .husky/pre-commit",
     "format": "prettier src/**/*.{ts,tsx} --write",
     "lint": "eslint --max-warnings 0",
     "lint:fix": "eslint --max-warnings 0 --fix",
