@@ -116,6 +116,8 @@ If you wish to remove any hooks, simply delete the corresponding file in the .hu
 
    The imported lib will instead be around 600 KB. Nonetheless, Faker should **NOT** be used in production and instead be limited to testing and demos.
 
+4. Starting May 2025, this project and its dependencies are set to be updated once a month or as issues/PR's come in.
+
 ## Testing
 
 Unit testing is handled by React Testing Library and Vitest while End-to-End (E2E) Testing is conducted by Playwright.
