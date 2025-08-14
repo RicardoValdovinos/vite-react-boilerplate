@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://philonet-landing-web.netlify.app/sitemap.xml

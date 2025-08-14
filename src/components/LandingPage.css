@@ -1,0 +1,178 @@
+/* ========== BASE ========= */
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.fullpage-wrapper {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  scrollbar-width: none;
+}
+.fullpage-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.section {
+  scroll-snap-align: start;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  padding: 0 40px;
+}
+
+/* ========== BOTTOM NAVBAR ========= */
+.bottom-navbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  background: #000;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  z-index: 1000;
+  gap: 12px;
+  font-size: 1.4rem;
+}
+
+.logo {
+  height: 40px;
+  object-fit: contain;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 20%;
+}
+
+.bottom-navbar .nav-links {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto; /* Allow scroll if needed on mobile */
+  -webkit-overflow-scrolling: touch; /* Smooth scroll on iOS */
+}
+
+.bottom-navbar .nav-links::-webkit-scrollbar {
+  display: none;
+}
+
+.bottom-navbar .nav-item {
+  color: grey;
+  cursor: pointer;
+  flex-shrink: 0; 
+}
+
+/* ========== DOTS NAVIGATION ========= */
+.dots-navigation {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 1000;
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: grey;
+  opacity: 0.4;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.dot.active {
+  background: white;
+  opacity: 1;
+  transform: scale(1.3);
+}
+
+/* ========== RESPONSIVE ========= */
+@media (max-width: 1024px) {
+  .section {
+    font-size: 2.0rem;
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bottom-navbar {
+    height: 50px;
+    font-size: 0.9rem;
+  
+  }
+
+  .logo {
+    height: 32px;
+    border-radius: 12%;
+  }
+
+  .nav-links {
+    gap: 1.2rem;
+  }
+
+  .section {
+    font-size: 1.5rem;
+    padding: 0 16px;
+    text-align: center;
+  }
+
+  .dots-navigation {
+    right: 10px;
+    gap: 8px;
+  }
+
+  .dot {
+    width: 4px;
+    height: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bottom-navbar {
+    height: 55px;
+    font-size: 0.75rem;
+    padding: 0 8px;
+  }
+
+  .logo {
+    height: 28px;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .section {
+    font-size: 1.5rem;
+    padding: 0 12px;
+  }
+}
+
+.typewriter {
+  white-space: pre-line;
+  display: inline-block;
+}
+
+.typewriter::after {
+  content: "|";
+  animation: blink 1s infinite;
+  color: #3F8EFC;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
