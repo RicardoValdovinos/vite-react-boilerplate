@@ -340,3 +340,7 @@ A simplified list can be found in the [Overview](#overview) section.
 - [ts-reset](https://github.com/total-typescript/ts-reset#readme)
 - [Faker](https://fakerjs.dev/)
 - [Dayjs](https://day.js.org/en/)
+
+## Deployment
+
+[![Deploy on Hostinger](https://assets.hostinger.com/vps/deploy.svg)](https://www.hostinger.com/web-apps-hosting)
