@@ -1,5 +1,7 @@
 # Vite React Boilerplate
 
+[![Deploy on Hostinger](https://assets.hostinger.com/vps/deploy.svg)](https://www.hostinger.com/web-apps-hosting)
+
 ![](/public/vite-react-boilerplate.png)
 
 Everything you need to kick off your next Vite + React web app!
